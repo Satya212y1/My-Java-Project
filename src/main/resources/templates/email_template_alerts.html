@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+    <title>Zenscale Credentials</title>
+</head>
+
+<body style="margin: 0; padding: 0; box-sizing: border-box; font-family: Helvetica;">
+<div class="temp_mail" style="width: 40%; position: absolute; margin: auto; top: 0; right: 0; bottom: 0; left: 0">
+
+    <a href="https://www.zenscale.in/" target="_blank">
+        <img src="https://www.zenscale.in/assets/frontpage/images/logo.png"
+             style="width: 165px; margin: 0 auto;display: flex;" alt="Zenscale Logo">
+    </a>
+
+    <div style="border-bottom:1px solid #7ec556;"></div>
+
+    <div style="margin-top: 10px; text-align: center;">
+
+        <p style="font-size: 15px; color: #171f23de; margin: 8px 0 0; line-height: 24px;">Here is an alert for comment of
+            <!--<a href="https://www.zenscale.in/" style="color:#7ec556;">Zenscale</a>.-->
+            <br th:text="'Lead: ' + ${data.leadDesc} + ' & Stage: ' + ${data.stageDesc}"><br>
+            <!--<b>please change the password immediately after login.</b>-->
+        </p>
+
+        <span style="display:inline-block; vertical-align:middle; margin:15px 0 20px; border-bottom:1px solid #cecece; width:100px;"></span>
+
+        <p style="color:rgba(23,31,35,.87); font-size:18px;line-height:20px; margin:0; font-weight: 500;">
+            <strong style="display: block;font-size: 13px; margin: 0 0 4px; color:rgba(23,31,35,.64); font-weight:normal;">Comment</strong><b th:text="${data.comment}"></b>
+            <strong style="display: block;font-size: 13px; margin: 0 0 4px; color:rgba(23,31,35,.64); font-weight:normal;">Comment Date</strong><b th:text="${data.createdDate}"></b>
+        </p>
+
+        <!--<a href="https://www.zenscale.in/signin"
+           style="background:#7ec556;text-decoration:none !important; display:inline-block; font-weight:500; margin-top:24px; color:#fff;text-transform:uppercase; font-size:14px;padding:10px 12px;display:inline-block;border-radius:3px;">Login
+            to your Account</a>-->
+    </div>
+    <!--<h5 style="text-align:center; font-size: 15px; color: #171f23de; margin: 8px 0 0; line-height: 24px;">Follow Us
+        On Social Media <br> <small>For The Lastest Updates!</small>
+    </h5>-->
+    <!--<div class="social" style="text-align: center;font-size: 25px;">
+        <a href="https://www.facebook.com/zenscalesolutions/"><i class="fa-brands fa-facebook"
+                style="color:#3b5998"></i></a>
+        <a href="https://www.instagram.com/zenscaleerp/?igshid=YmMyMTA2M2Y%3D"><i class="fa-brands fa-instagram"
+                style="margin: 0 5px; color: #d2328b;"></i></a>
+        <a href="https://www.linkedin.com/company/zenscaleerp"><i class="fa-brands fa-linkedin"
+                style="margin: 0 5px; color: #007ab9;"></i></a>
+        <a href="https://www.youtube.com/channel/UC482XkB7dSd0vxMsT64JV5A"><i class="fa-brands fa-youtube"
+                style="color:#ff0000"></i></a>
+    </div>-->
+    <div style="border-bottom:1px solid #7ec556; padding: 10px;"></div>
+</div>
+</body>
+<style>
+    @media screen and (max-width: 600px) {
+        .element {
+            /* Apply some styles */
+        }
+    }
+</style>
+
+</html>
